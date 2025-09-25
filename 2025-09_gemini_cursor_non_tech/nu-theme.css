@@ -1,0 +1,74 @@
+:root {
+  --nu-purple: #8A05BE;
+  --nu-purple-dark: #4B0D67;
+  --nu-bg: #0B0212;
+  --nu-text: #F5F2F7;
+  --nu-muted: #C6B9D9;
+}
+
+.reveal {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  color: var(--nu-text);
+}
+
+.reveal .slides section {
+  text-shadow: none;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  color: var(--nu-text);
+  letter-spacing: 0.3px;
+}
+
+.reveal a {
+  color: var(--nu-purple);
+}
+
+.reveal .controls, .reveal .progress span {
+  color: var(--nu-purple);
+  background: var(--nu-purple);
+}
+
+.title-slide h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.title-slide .subtitle {
+  color: var(--nu-muted);
+  font-size: 1.2rem;
+}
+
+.title-slide .meta {
+  color: var(--nu-muted);
+  font-size: 0.95rem;
+}
+
+.reveal code, .reveal pre code {
+  background: #180424;
+  color: #F3E9FF;
+  border-radius: 8px;
+}
+
+.grid.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .grid.two { grid-template-columns: 1fr; }
+}
+
+/* Subtle cards */
+.reveal section ul li, .reveal section ol li {
+  margin: 0.35rem 0;
+}
+
+/* Dark background slides */
+section[aria-hidden="false"][data-background-color="#0B0212"] h2,
+section[aria-hidden="false"][data-background-color="#0B0212"] li {
+  color: var(--nu-text);
+}
+
+
